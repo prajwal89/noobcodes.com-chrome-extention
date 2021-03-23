@@ -1,0 +1,90 @@
+
+<pre id="ans">
+    sdfsdfsd
+    sdfsadf
+    ans 
+    34234
+</pre>
+
+
+
+
+
+<script>
+    // var xhttp = new XMLHttpRequest();
+    // xhttp.open("POST", "http://localhost/coddingbuddy/api.php", true);
+    // xhttp.setRequestHeader("Content-Type", "application/json");
+
+    // var data = { type: 'type'};
+    // xhttp.send(JSON.stringify(data));
+
+
+    // xhttp.onreadystatechange = function () {
+    //     if (this.readyState == 4 && this.status == 200) {
+    //         // Response
+    //         var response = this.responseText;
+    //         document.write(response);
+    //     }
+    // };
+
+    window.onload = function () {
+
+        // var url = "http://localhost/coddingbuddy/api2?type=search";
+
+        // var xhttp = new XMLHttpRequest();
+        // xhttp.open("POST", url, true);
+        // xhttp.setRequestHeader("Content-Type", "application/json");
+        // xhttp.onreadystatechange = function () {
+        //     if (this.readyState == 4 && this.status == 200) {
+        //         // Response
+        //         var response = this.responseText;
+        //         alert(response);
+        //     }
+        // };
+        // var data = {query:'array'};
+        // xhttp.send(JSON.stringify(data));
+
+
+
+        var url = "http://127.0.0.1:8000/api/api2.php?type=test";
+
+        var xhttp = new XMLHttpRequest();
+        xhttp.open("POST", url, true);
+        xhttp.setRequestHeader("Content-Type", "application/json");
+        xhttp.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                // Response
+                var response = this.responseText;
+                alert(response);
+            }
+        };
+        var ans = document.getElementById('ans').innerText;
+        var data = {ans:ans};
+        xhttp.send(JSON.stringify(data));
+
+    }
+
+
+    // Post a user
+
+// var data = {};
+// data.type = "test";
+// var json = JSON.stringify(data);
+
+// console.log(data);
+
+// var xhr = new XMLHttpRequest();
+// xhr.open("POST", url, true);
+// xhr.send(json);
+
+// // xhr.setRequestHeader('Content-type','application/json; charset=utf-8');
+// xhr.onload = function () {
+// 	// var users = JSON.parse(xhr.responseText);
+// 	var users = xhr.responseText;
+// 	if (xhr.readyState == 4 && xhr.status == "201") {
+// 		console.log(users);
+// 	} else {
+// 		console.log(users);
+// 	}
+// }
+</script>

@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+
+<head>
+  <script src="js/popup.js"></script>
+  <link rel="stylesheet" href="css/popup.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+
+</head>
+
+<body>
+  <style>
+    body{
+      position: relative;
+    }
+    a {
+      text-decoration: none;
+    }
+
+    .favicon {
+      width: 40px;
+      height: 40px;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+    .title {
+      /* position: relative; */
+      margin-left: 50px;
+      margin-top: 25px !important;
+      font-family: cursive;
+    }
+
+    .refresh {
+      position: absolute;
+      right: 0;
+    }
+
+    #li_answer_links {
+      text-decoration: none;
+      font-size: 16px;
+    }
+  </style>
+
+  <div id="main_container" class="main_container">
+    <div class="card" style="border: none;">
+      <div class="card-header p-0">
+        <img src="img/favicon/36.png" class="rounded float-left favicon">
+        <Span class="title">
+          Noob codes
+        </Span>
+        <a href="" id="refresh" class="refresh"> refresh </a>
+      </div>
+
+      <div id="content_holder">
+        <div class="row">
+          <div class="col-3 d-inline-block">
+            <img src="img/user.png" class="float-left pl-1 pt-1" id="user_image" style="width: 80px; height: 80px;">
+          </div>
+          <div class="col-9 d-inline-block">
+            <h5 class="font-weight-bold text-capitalize py-0" id="user_name"><span class="text-warning"> Please Wait
+                </span></h5>
+            <span id="total_answers_submitted" class="text-primary">0</span> answers submitted</br>
+            <span id="page_views" class="text-success">0</span> views on all answers
+          </div>
+        </div>
+        ----------------------------------------------
+        <center>
+          <div class="btn_holder">
+            <a class="button login_btn" id="dash_link" target="_blank" href="#">Dashboard</a>
+            <a class="button register_btn" id="settings_link" target="_blank" href="#">Settings</a>
+            <a class="button howto_btn mt-1 justify-content-center" href="#">How to use ?</a>
+          </div>
+        </center>
+        ----------------------------------------------
+
+
+        <div class="recent_answers m-0">
+          <b>Your recent answers</b>
+          <ul class="list-unstyled  ml-2" id="answers_links">
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+    <script src="background.js"></script>
+
+
+
+</body>
+
+</html>
