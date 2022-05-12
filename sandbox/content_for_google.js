@@ -8,7 +8,6 @@ window.onload = function () {
     top_form_holder.id = "top_form_holder";
     document.getElementById("topstuff").appendChild(top_form_holder);
 
-
     add_ans_link();
 
 

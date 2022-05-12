@@ -12,6 +12,7 @@
       "36": "36.png"
     }
   },
+  
   "permissions": [
     "identity",
     "storage",
@@ -83,7 +84,6 @@
         "img/green_mark.png"
       ]
     },
-
     {
       "matches": [
         "http://*/*",
@@ -130,15 +130,12 @@
       ],
       "all_frames": false,
       "run_at": "document_idle",
-      "js":[
-          "js/content_for_page.js"
+      "js": [
+        "js/content_for_page.js"
       ],
-      "css":[
+      "css": [
         "css/content.css"
       ]
-  }
-
+    }
   ]
-
-  
 }
