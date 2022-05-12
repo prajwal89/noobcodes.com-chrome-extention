@@ -3,7 +3,6 @@
  * Based on Atom's `atom-dark` theme: https://github.com/atom/atom-dark-syntax
  * @author Joe Gibson (@gibsjose)
  */
-
  code[class*="language-"],
  pre[class*="language-"] {
 	 color: #c5c8c6;

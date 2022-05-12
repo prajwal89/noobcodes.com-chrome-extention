@@ -24,9 +24,6 @@ chrome.runtime.onMessage.addListener(function (msg, sender, sendResponse) {
 
 
 
-
-
-
 // var person = {
 //   "name":"Ram",
 //   "age":27,

@@ -2,7 +2,6 @@ window.onload = function () {
     // const api = "http://127.0.0.1:8000/api/api2.php?";
     // const host = "http://127.0.0.1:8000/";
 
-
     const api = "https://www.noobcodes.com/api/api2.php?";
     const host = "https://www.noobcodes.com/";
 

@@ -30,11 +30,6 @@ window.onload = function () {
 
 
 
-
-
-
-
-
     chrome.storage.sync.get(['email', 'user_id', 'token', 'user_name'], function (result) {
         var email = result.email;
         var user_id = result.user_id;

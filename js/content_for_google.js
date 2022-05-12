@@ -42,9 +42,6 @@ window.onload = function () {
 
 
 
-
-
-
         //form for code_submit_form
         var code_submit_form = document.createElement("div");
         code_submit_form.id = "code_submit_form";
@@ -213,7 +210,7 @@ window.onload = function () {
 
                         // alert("susscess");
 
-                    }else{
+                    } else {
                         alert(this.responseText);
                     }
 
